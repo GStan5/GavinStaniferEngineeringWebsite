@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 
 import Header from './components/header/Header'
@@ -9,8 +8,6 @@ import Services from './components/services/Services'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-
-import { OrbitControls, Sphere, Stars, Text, Billboard } from '@react-three/drei'
 
 
 function App() {
