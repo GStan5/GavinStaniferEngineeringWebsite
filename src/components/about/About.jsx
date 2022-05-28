@@ -8,7 +8,7 @@ import DevStackVisual from './ThreeJS/DevStackVisual'
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
+      <h5>Background</h5>
       <h2 className="text-light">About Me</h2>
 
 
