@@ -26,7 +26,7 @@ const Nav = () => {
       className={activeNav === '#services' ? 'active' : ""}><FaHandshake/></a>
 
       <a href="#contact"        onClick={() => setActiveNav("#contact")}
-      className={activeNav === '#about' ? 'contact' : ""}><RiContactsBook2Line/></a>
+      className={activeNav === '#contact' ? 'contact' : ""}><RiContactsBook2Line/></a>
 
     </nav>
   )
