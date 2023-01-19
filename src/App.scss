@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+/******************CTA******************/
+.ctas {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/*****************Buttons******************/
+// a {
+//   color: var(--color-primary);
+//   transition: var(--transition);
+// }
+
+// a:hover {
+//   color: var(--color-white);
+// }
+
+// .btn {
+//   width: max-content;
+//   display: inline-block;
+//   color: var(--color-primary);
+//   padding: 0.75rem 1.2rem;
+//   border-radius: 0.4rem;
+//   cursor: pointer;
+//   border: 1px solid var(--color-primary);
+//   transition: var(--transition);
+// }
+
+// .btn:hover {
+//   background: var(--color-white);
+//   color: var(--color-bg);
+// }
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
