@@ -12,30 +12,53 @@ import Footer from "./components/footer/Footer";
 import { SiJirasoftware } from "react-icons/si";
 import { BsFillHouseFill } from "react-icons/bs";
 
+import React, { useState } from "react";
+
 function App() {
+  const [count, setCount] = useState(0);
+  const [softwareEngineer, setSoftwareEngineer] = useState(true);
+
   return (
     <>
+      {/* background */}
       <div id="stars1"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
 
-      <div className="cta">
-        <a href="#contact" download className="btn">
+      {/* top header buttons */}
+      <div className="ctas">
+        <a onClick={() => setSoftwareEngineer(true)} className="btn">
           <SiJirasoftware /> Software Engineer
         </a>
-        <a href="#contact" className="btn btn-primary">
+        <a onClick={() => setSoftwareEngineer(false)} className="btn">
           <BsFillHouseFill /> Real Estate Agent
         </a>
       </div>
 
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      {/* <Portfolio /> */}
-      <Contact />
-      <Footer />
+      {/* state deciding content shown */}
+      {softwareEngineer ? (
+        <>
+          <Header />
+          <Nav />
+          <About />
+          <Experience />
+          <Services />
+          {/* <Portfolio /> */}
+          <Contact />
+          <Footer />
+        </>
+      ) : (
+        <>
+          <Header />
+          {/* <Nav /> */}
+          {/* <About /> */}
+          {/* <Experience /> */}
+          {/* <Services /> */}
+          {/* <Portfolio /> */}
+          <Contact />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
