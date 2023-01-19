@@ -1,116 +1,121 @@
-.contact__container { 
-    width: 90%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 10rem;
-    padding: 2rem;
-    border-radius: 1.2rem;
-    background-image: linear-gradient(var(--color-primary),  var(--color-shirt));
-    // background-image: linear-gradient(var(--color-white), var(--color-stars-dark));
+.contact__container {
+  width: 50%;
+  display: grid;
+  // grid-template-columns: 30% 58%;
+  gap: 10rem;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  background-image: linear-gradient(
+    var(--color-transparent) 25%,
+    var(--color-shirt)
+  );
+  // background-image: linear-gradient(var(--color-white), var(--color-stars-dark));
+}
+
+.contact__container:hover {
+  background-image: linear-gradient(
+    var(--color-primary) 25%,
+    var(--color-shirt)
+  );
 }
 
 .contact__options {
-    display: flex;
-    flex-direction: column;
-    gap: 2.2rem;
-    margin-top: 1rem;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-top: 1rem;
+  justify-content: space-evenly;
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transform: var(--transition);
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transform: var(--transition);
 }
 
 .contact__option:hover {
-    background: var(--color-stars-light);
-    border-color: var(--color-primary);
+  background: var(--color-stars-light);
+  border-color: var(--color-primary);
 }
 
 .contact__option-icon {
-    color: var(--color-primary);
-    font-size: 1.5rem;
+  color: var(--color-primary);
+  font-size: 1.5rem;
 }
 
 .contact__option a {
-    background: var(--color-shirt);
-    border-radius: 0.5rem;
-    padding: 0.4rem;
-    border: 1px solid var(--color-primary);
-    color: var(--color-bg-variant);
+  background: var(--color-shirt);
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  border: 1px solid var(--color-primary);
+  color: var(--color-bg-variant);
 
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 1.5rem;
-    height: max-content;
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  height: max-content;
 }
 
 .contact__option a:hover {
-    background: var(--color-stars-light);
-    color: var(--color-primary);
+  background: var(--color-stars-light);
+  color: var(--color-primary);
 }
-
-
-
 
 /*************************FORM*************************/
 form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--color-stars-light);
-    border: 2px solid var(--color-primary-variant);
-    resize: none;
-    color: var(--color-white);
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-stars-light);
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-white);
 }
 
 form p {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
-
-
-
 
 /***************************[L] MEDIA QUERIES***************************/
 @media screen and (min-width: 2501px) and (max-width: 4000px) {
-    .contact__container { 
-        gap: 20rem;
-    }
+  .contact__container {
+    gap: 20rem;
+  }
 
-    form {
-        gap: 2.3rem;
-    }
+  form {
+    gap: 2.3rem;
+  }
 }
 
 /***************************[M] MEDIA QUERIES***************************/
 @media screen and (max-width: 1024px) {
-    .contact__container { 
-        width: 75%;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+  .contact__container {
+    width: 75%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
-    form {
-        width: 100%;
-        gap: 2.3rem;
-    }
+  form {
+    width: 100%;
+    gap: 2.3rem;
+  }
 }
 
 /***************************[S] MEDIA QUERIES***************************/
 @media screen and (max-width: 600px) {
-    .contact__container { 
-        width: 85%;
-        gap: 1rem;
-    }
+  .contact__container {
+    width: 85%;
+    gap: 1rem;
+  }
 }

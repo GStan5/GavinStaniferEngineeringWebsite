@@ -1,13 +1,14 @@
-import React from 'react'
-import './footer.scss'
+import React from "react";
+import "./footer.scss";
 
-
-import { BsTwitter, BsGithub, BsSpotify } from 'react-icons/bs'
+import { BsTwitter, BsGithub, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>Gavin Stanifer Engineering</a>
+      <a href="#" className="footer__logo">
+        Gavin Stanifer Enterprise
+      </a>
 
       {/* <ul className="permalinks">
         <li><a href="#">Home</a></li>
@@ -19,17 +20,22 @@ const Footer = () => {
       </ul> */}
 
       <div className="footer__socials">
-        <a href="https://github.com/GStan5" target="_blank"><BsGithub/></a>
-        <a href="https://twitter.com/GavinStanifer" target="_blank"><BsTwitter/></a>
-        <a href="https://open.spotify.com/playlist/32hJXySZtt9YvnwcYINGZ0?si=8c7559621edf4772" target="_blank"><BsSpotify/></a>
+        <a href="https://github.com/GStan5" target="_blank">
+          <BsGithub />
+        </a>
+        <a href="https://twitter.com/GavinStanifer" target="_blank">
+          <BsTwitter />
+        </a>
+        <a href="https://www.instagram.com/gavinstanifer" target="_blank">
+          <BsInstagram />
+        </a>
       </div>
 
       <div className="footer__copyright">
         <small>&copy; GSE. All rights reserved</small>
       </div>
-  
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

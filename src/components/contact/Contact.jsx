@@ -1,9 +1,8 @@
-import React from 'react'
-import './contact.scss'
+import React from "react";
+import "./contact.scss";
 
-
-import ContactOptions from './ContactOptions'
-import ContactForm from './ContactForm'
+import ContactOptions from "./ContactOptions";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -12,18 +11,14 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
-      
-
         <ContactOptions />
-        <ContactForm />
-
-
+        {/* <ContactForm /> */}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
 
 // https://discordapp.com/channels/@me/USERID/
 // Great Blue#3274
