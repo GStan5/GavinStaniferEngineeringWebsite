@@ -10,11 +10,7 @@ const ContactOptions = () => {
         <BsChatTextFill className="contact__option-icon" />
         <h4>Text or Call</h4>
         <h5>Contact Me Instantly</h5>
-        <a
-          href="sms:+919999999999?body=Hello World!"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="sms:9285871309" target="_blank" rel="noopener noreferrer">
           (928) 587-1309
         </a>
       </article>
