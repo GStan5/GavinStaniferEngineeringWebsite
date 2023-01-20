@@ -2,6 +2,7 @@ import React from "react";
 
 import { MdEmail } from "react-icons/md";
 import { BsChatTextFill } from "react-icons/bs";
+import App from "../../App";
 
 const ContactOptions = () => {
   return (

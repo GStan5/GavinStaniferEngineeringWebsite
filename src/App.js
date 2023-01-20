@@ -1,5 +1,6 @@
 import "./App.scss";
 
+//Software Engineer
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
@@ -9,13 +10,16 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
+//Real Estate Agent
+// import realEstateAgentHeader from "./components/header/realEstateHeader";
+import RealEstateHeader from "./components/header/RealEstateHeader";
+
 import { SiJirasoftware } from "react-icons/si";
 import { BsFillHouseFill } from "react-icons/bs";
 
 import React, { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [softwareEngineer, setSoftwareEngineer] = useState(true);
 
   return (
@@ -49,7 +53,7 @@ function App() {
         </>
       ) : (
         <>
-          <Header />
+          <RealEstateHeader />
           {/* <Nav /> */}
           {/* <About /> */}
           {/* <Experience /> */}
